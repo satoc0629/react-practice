@@ -1,8 +1,18 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:node/recommended"
+    "plugin:node/recommended",
+    "plugin:react/recommended"
   ],
+  "plugins": [
+    "node",
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "node" : true,
+    "es6": true
+  },
   "parserOptions": {
     "ecmaVersion": 2016,
     "sourceType": "module",
@@ -10,17 +20,12 @@
       "jsx": true
     }
   },
-  "plugins": [
-    "node",
-    "react"
-  ],
-  "env": {
-    "browser": true,
-    "es6": true
-  },
+
   "globals": {},
   "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/prop-types":0,
+    "node/no-unsupported-features/es-syntax":0
+    //    "react/jsx-uses-react": "error",
+//    "react/jsx-uses-vars": "error"
   }
 }

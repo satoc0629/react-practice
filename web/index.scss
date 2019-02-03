@@ -1,4 +1,11 @@
-.card:hover {
+.selected-card:hover {
+  background-color: darkgray;
+}
+
+.junkai-btn.active {
+  background-color: darkgray;
+}
+.junkai-btn:hover {
   background-color: darkgray;
 }
 
